@@ -16,17 +16,17 @@
         <div class="rightside">
             <h1>Cadastre-se</h1>
 
-            <form method="POST">
+            <form method="POST" class="validator">
                 <label>Seu nome:<br/>
-                    <input type="text" placeholder="Nome" name="name"/>
+                    <input type="text" placeholder="Nome" name="name" required/>
                 </label>
 
                 <label>Seu e-mail:<br/>
-                    <input type="text" placeholder="E-mail" name="email"/>
+                    <input type="text" placeholder="E-mail" name="email" autocomplete="email" required/>
                 </label>
 
                 <label>Seu senha:<br/>
-                    <input type="password" placeholder="Senha" name="password"/>
+                    <input type="password" placeholder="Senha" name="password" minlength="4" maxlength="10"required/>
                 </label>
                 
                 <label>
@@ -34,7 +34,7 @@
                 </label>
             </form>
 
-            <div>
+            <div style="color:white">
                 Já tem uma conta? <a href="">Faça o login</a>
             </div>
 
