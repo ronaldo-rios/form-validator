@@ -16,17 +16,17 @@
         <div class="rightside">
             <h1>Cadastre-se</h1>
 
-            <form method="POST" action="pagina-obrigado.com" class="validator">
+            <form method="POST" action="cadastro.php" class="validator">
                 <label>Seu nome:<br/>
                     <input type="text" placeholder="Nome" name="name" data-rules="required"/>
                 </label>
 
                 <label>Seu e-mail:<br/>
-                    <input type="text" placeholder="E-mail" name="email" autocomplete="email" data-rules="required"/>
+                    <input type="email" placeholder="E-mail" name="email" autocomplete="email" data-rules="required"/>
                 </label>
 
                 <label>Seu senha:<br/>
-                    <input type="password" placeholder="Senha" name="password" minlength="4" maxlength="10" data-rules="required"/>
+                    <input type="password" placeholder="Senha" name="password" data-rules="required|min=4"/>
                 </label>
                 
                 <label>

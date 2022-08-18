@@ -77,6 +77,12 @@ a {
     color:white;
 }
 
+error {
+    border-radius: 10px;
+    background-color: beige;
+    color: red;
+}
+
 @media (max-width: 1010px) {
     .screen {
         display:block;
